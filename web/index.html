@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="icon" href="./media/logo.png" />
+        <title>
+            Room Control
+        </title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Giarolo Mattia" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Carica Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+        <!-- Carica Supabase JS CDN -->
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+        <!-- script deferenziato per garantire inclusione delle librerie esterne e lavorare sui componenti della pagina -->
+        <script src="./js/script.js" defer></script>
+    
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./media/logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <h1>Room Control</h1>
+            </div>
+        </header>
+
+        <main>
+            <div id="ambientMeter">
+                <div class="t_h_chart">
+                    <canvas id="T_H_Chart0"></canvas>
+                </div>
+                <div id="actualValues">
+                    <div class="actualValue" id="actualTemperature">
+                        <h2>Temperatura</h2>
+                        <span id="currentTemp">-- °C</span>
+                    </div>
+                    <div class="actualValue" id="actualHumidity">
+                        <h2>Umidità</h2>
+                        <span id="currentHumi">--  %</span>
+                    </div>
+                </div>
+            </div>
+            <input type="date" id="dateSelector" />
+            <button id="loadDataBtn">Carica Dati</button>
+            <div>
+                <div>
+                    <div id="roomLight"></div>
+                    <div id="agentStatus"></div>
+                </div>
+                <div id="roomPresence"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+    --bg: #161616;
+    --txt-color: #B8B8B8;
+    --imp-txt-color: #7277d4;
+    --temp-txt-color: #1C3180;
+    --humi-txt-color: #4A2A92;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--txt-color);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.25rem 2rem;
+        font-size: 1.5rem;
+
+        * {
+            font-weight: bolder;
+            color: var(--imp-txt-color);
+        }
+    }
+
+    main{
+        padding: 1rem 2rem;
+
+        #ambientMeter {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .t_h_chart {
+                width: 75%;
+            };
+
+            #actualValues {
+                font-weight: bolder;
+                ;
+                #currentTemp {
+                    font-size: 2rem;
+                    color: var(--temp-txt-color);
+                };
+
+                #currentHumi {
+                    font-size: 2rem;
+                    color: var(--humi-txt-color);
+                }
+            }
+        }
+    }
+}

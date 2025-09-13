@@ -1,0 +1,15 @@
+CREAZIONE BOT
+    Andare su Telegram e cercare @BotFather
+    Scrivere il comando: /newbot
+    Seguire le istruzioni e copiare il TOKEN del bot.
+
+CHAT ID
+    Andare su https://api.telegram.org/bot<TUO_BOT_TOKEN>/getUpdates
+    Inviare un messaggio al bot e trovare il chat_id nella risposta JSON.
+
+MODIFICA CODICE
+    Sostituire BOT_TOKEN e CHAT_ID nel file secret.h
+
+Nel progetto sono stati scelti:
+    NOME BOT: RoomController_COP
+    USERNAME BOT: roomcontroller_cop_bot
